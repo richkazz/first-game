@@ -55,7 +55,7 @@ function component(width, height, color, x, y, type) {
 
 function updateGameArea() {
     myGameArea.clear();
-    myGamePiece.x += 1;
+    myGamePiece.image.src = "runningimg"+1+".png";
     myGamePiece.newPos();
     myGamePiece.update();
 }
@@ -73,3 +73,4 @@ function clearmove() {
     myGamePiece.speedX = 0;
     myGamePiece.speedY = 0;
 }
+      

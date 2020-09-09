@@ -2,15 +2,17 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <script src="script.js"></script>
+    
+
     <style>
         canvas {
             border:1px solid #d3d3d3;
             background-color: #f1f1f1;
         }
     </style>
+    <script src="script.js"></script>
 </head>
-<body onload="startGame()">
+<body onclick="startGame()">
 <div style="text-align:center;width:480px;">
     <button onmousedown="move('up')" onmouseup="clearmove()" ontouchstart="move('up')">UP</button><br><br>
     <button onmousedown="move('left')" onmouseup="clearmove()" ontouchstart="move('left')">LEFT</button>
